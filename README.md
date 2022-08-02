@@ -112,7 +112,11 @@ Our environment setup is complete. Navigate back to the Query Editor.
 rephrase goal
 
 ### Create a Schema
+The first step to create the reporting structures is to create a schema.
 
+```sql
+create schema <schema_name> with (location='<s3_location>')
+```
 
 
 
