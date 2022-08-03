@@ -54,7 +54,7 @@ tables that are ready to use by a data analyst.
    - Go to the IAM Management Console
    - Select *Users*
    - Select *Add Users*
-   - Provide a Descriptive User Name like *<initials>-aws-covid*
+   - Provide a Descriptive User Name like ```shell <username>-aws-covid```
    - Select AWS Credential Type: *Access key - Programmatic access*
    - Set Permissions: *Attach existing policies directly*
    - Add the following policy: *AmazonS3FullAccess*
@@ -69,11 +69,11 @@ cluster. We're going to configure the S3 catalog to access our S3 bucket.
 
 1. Navigate to the *Catalogs* tab. Click *Configure a Catalog*.
 2. Create an S3 Catalog.
-   - Catalog name: *<initals>_aws_lab*
+   - Catalog name: ```shell <username>_aws_lab```
    - Add a relevant description
    - Authenticate to S3 through the AWS Access Key/Secret created earlier
    - Metastore configuration: *"I don't have a metastore"*
-   - Default directory name: *<initals>_metadata*
+   - Default directory name: ```shell <username>_metadata```
    - Enable *Allow creating external tables*
    - Enable *Allow writing to external tables*
    - Select default table format: *Hive*
@@ -94,10 +94,10 @@ against your catalogs. You can access the catalog data exposed by running
 clusters in the Query Editor.
 
    - Click *Create a new cluster*
-   - Enter cluster name: *<user>-aws-lab*
+   - Enter cluster name: ```shell <username>-aws-lab```
    - Cluster size: *Free*
    - Cluster type: *Standard*
-   - Catalogs: *<user>_aws_lab* (select the catalog previously created)
+   - Catalogs: ```shell <username>_aws_lab``` (select the catalog previously created)
    - Cloud provider region: *US East (Ohio)* aka *us-east-2*
 
 Our environment setup is complete. Navigate back to the Query Editor.
