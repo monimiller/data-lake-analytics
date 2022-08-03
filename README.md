@@ -341,7 +341,7 @@ select
     sum(confirmed) as confirmed_cases,
     sum(active) as active_cases
 from
-    covid.ejhu_stg_us
+    ejhu_stg_us
 where
     last_update = '2020-05-30T02:32:48'
 group by
@@ -462,8 +462,8 @@ GROUP BY
 To ensure data analysts only have access to the consume tables, add the
 role-based access control configurations.
 
-1. Navigate to ``` shell Access Control - Roles and Privileges```
-2. Add role named: ``` shell <username>_covid_lab ```
+1. Navigate to ``` Access Control - Roles and Privileges```
+2. Add role named: ```  <username>_covid_lab ```
 3. Entity kind: *Table*
 4. Select your catalog
 5. Enter the proper schema
