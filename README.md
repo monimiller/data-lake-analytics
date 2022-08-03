@@ -7,9 +7,9 @@ This is a repository to demonstrate Data Lake analytics with Starburst Galaxy on
 ## Welcome
 
 Welcome to the Data Lake Analytics Reporting Structures tutorial with Starburst
-Galaxy on AWS. The intent of the tutorial was to demonstrate a feasible example
+Galaxy on AWS. The intent of the tutorial is to demonstrate a feasible example
 of data lake reporting structures. With AWS S3 as the data lake and Starburst
-Galaxy serving as the analytics engine, I hope you were able to experience
+Galaxy serving as the analytics engine, I hope you are able to experience
 firsthand the benefits of implementing comprehensive data lake analytics
 solutions.
 
@@ -29,13 +29,13 @@ the reason behind this tutorial.
 
 Ultimately, we want to make sure that the data lake stays as clean as possible.
 
-_Land layer_ - *stores unmodified source data at any level of granularity*
-_Structure layer_ - *stores joined, enriched, cleansed data*
-_Consume layer_ - *stores aggregated data that is ready to be queried*
+- **Land layer**: *stores unmodified source data at any level of granularity*
+- **Structure layer**: *stores joined, enriched, cleansed data*
+- **Consume layer**: *stores aggregated data that is ready to be queried*
 
 We will create our own reporting structure based off the Covid-19 data lake.
 First, we will land the raw tables in our own S3 bucket. Next, we will cleanse
-and enrich some of the data available. Finally, we will create an aggregated
+and enrich some of the data available. Finally, we will create aggregated
 tables that are ready to use by a data analyst.
 
 # Tutorial
@@ -54,7 +54,7 @@ tables that are ready to use by a data analyst.
    - Go to the IAM Management Console
    - Select *Users*
    - Select *Add Users*
-   - Provide a Descriptive User Name like ```shell <username>-aws-covid```
+   - Provide a Descriptive User Name like ```<username>-aws-covid```
    - Select AWS Credential Type: *Access key - Programmatic access*
    - Set Permissions: *Attach existing policies directly*
    - Add the following policy: *AmazonS3FullAccess*
