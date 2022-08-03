@@ -1,5 +1,5 @@
 ``` sql
-create table covid.hospital_beds (
+create table hospital_beds (
    objectid INTEGER,
    hospital_name VARCHAR,
    hospital_type VARCHAR,
