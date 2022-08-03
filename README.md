@@ -455,7 +455,7 @@ WHERE
     beds.state_name = cases.province_state
 GROUP BY
     province_state,
-    total_confirmed_cases
+    total_confirmed_cases;
 ```
 
 Thanks for completing the data lake analytics tutorial.
