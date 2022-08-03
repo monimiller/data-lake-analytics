@@ -458,4 +458,23 @@ GROUP BY
     total_confirmed_cases;
 ```
 
+## Implement Role Based Access Control
+To ensure data analysts only have access to the consume tables, add the
+role-based access control configurations.
+
+1. Navigate to ``` shell Access Control - Roles and Privileges```
+2. Add role named: ``` shell <username>_covid_lab ```
+3. Entity kind: *Table*
+4. Select your catalog
+5. Enter the proper schema
+6. Table: `ejhu_consume`
+7. Privileges: `SELECT from table`
+8. Hit *Add privileges*
+
+Now, go back to the query editor, and switch your role in the top right hand
+corner. Select from the table, and try selecting from a table that has not been
+granted permissions yet. To learn more about role-based access control in
+Starburst Galaxy, check out [my blog](https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/) on Granularity and RBAC.
+
+
 Thanks for completing the data lake analytics tutorial.
