@@ -113,6 +113,11 @@ The first step to create the reporting structures is to create a schema.
 create schema <schema_name> with (location='<s3_location>');
 ```
 
+```sql
+create schema covid_data with (location='s3://mm-aws-covid/');
+```
+
+
 Now, in the top right corner, select your cluster, catalog, and schema so that
 you can easily run the lab queries.
 
