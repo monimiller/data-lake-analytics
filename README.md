@@ -11,7 +11,7 @@ Galaxy on AWS. The intent of the tutorial is to demonstrate a feasible example
 of data lake reporting structures. With AWS S3 as the data lake and Starburst
 Galaxy serving as the analytics engine, I hope you are able to experience
 firsthand the benefits of implementing comprehensive data lake analytics
-solutions.
+solutions. 
 
 I chose to use a public dataset because transparency is extremely important to
 me, and I wanted the lab to be reproducible by anyone at any time, without any
