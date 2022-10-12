@@ -196,7 +196,7 @@ create table hospital_beds (
    avg_ventilator_usage VARCHAR,
    potential_increase_in_bed_capac INTEGER,
    latitude DOUBLE,
-   longtitude DOUBLE
+   longitude DOUBLE
 )
 WITH (
    format = 'json',
